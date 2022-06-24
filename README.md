@@ -17,9 +17,9 @@
 
 ## What We Create
 
--User Portal 
--Post Section
--like comment & share Etc
+- User Portal 
+- Post Section
+- like comment & share Etc
 
 **Jobair Hossain Tamim**
 [LiveSite](https://simple-social-site.netlify.app/ "Create  Jobair Hossain")
