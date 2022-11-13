@@ -34,7 +34,8 @@ const Profile = () => {
     }
     const getUserName=(text)=>{
         const email=text;
-        const userName = email.substring(0, email.length - 10)
+        const userName = email.substring(0, email.length - 10) || "";
+        
         return userName
     }
 

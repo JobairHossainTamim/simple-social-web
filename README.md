@@ -21,8 +21,9 @@
 -Post Section
 -like comment & share Etc
 
-**Jobair Hossain Tamim**
-[LiveSite](https://simple-social-site.netlify.app/ "Create  Jobair Hossain")
+### Live Site 
+
+[LiveSite](https://simple-social-web.vercel.app/ "Create  Jobair Hossain")
 ## 🤝 Support
 
 Contributions, issues, and feature requests are welcome!
