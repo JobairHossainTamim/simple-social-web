@@ -1,6 +1,5 @@
 
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Pages/Home/Home';
 import Login from './components/Pages/Login/Login';
@@ -22,11 +21,11 @@ function App() {
         <Routes>
           <Route exact  path='/' element={<ProtectedRoute><Home></Home></ProtectedRoute>}></Route>
           <Route exact path='/home' element={<ProtectedRoute><Home></Home></ProtectedRoute>}></Route>
-          <Route exact path='/addPost' element={<AddPost />}></Route>
-          <Route exact path='/shares' element={<Shares />}></Route>
-          <Route exact path='/profile/:id' element={<Profile />}></Route>
-          <Route exact path='/sharePost/:id' element={<SharePost />}></Route>
-          <Route exact path='/post/:id' element={<PostDescription />}></Route>
+          <Route exact path='/addPost' element={<ProtectedRoute><AddPost /></ProtectedRoute>}></Route>
+          <Route exact path='/shares' element={<ProtectedRoute><Shares /></ProtectedRoute>}></Route>
+          <Route exact path='/profile/:id' element={<ProtectedRoute><Profile /></ProtectedRoute>}></Route>
+          <Route exact path='/sharePost/:id' element={<ProtectedRoute><SharePost /></ProtectedRoute>}></Route>
+          <Route exact path='/post/:id' element={<ProtectedRoute><PostDescription /></ProtectedRoute>}></Route>
           <Route exact path='/login' element={<Login></Login>}></Route>
           <Route exact path='/register' element={<Registration></Registration>}></Route>
         </Routes>

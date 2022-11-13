@@ -50,8 +50,8 @@ const Navbar = () => {
 
                 {/* web view */}
                 <div className='flex space-x-10 justify-end item-center  md:hidden'>
-                    {menuItem.map((item) => {
-                        return <Link to={`${item.path}`} className={`text-gray-200 ${item.path === location.pathname && 'bg-white text-black rounded px-3 py-1'} `}>{item.title}</Link>
+                    {menuItem.map((item,index) => {
+                        return <Link to={`${item.path}`} key={index} className={`text-gray-200 ${item.path === location.pathname && 'bg-white text-black rounded px-3 py-1'} `}>{item.title}</Link>
                     })}
                     <h1
                         className="text-gray-200 cursor-pointer"
