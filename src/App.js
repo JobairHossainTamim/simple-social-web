@@ -20,15 +20,15 @@ function App() {
       <ToastContainer />
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<ProtectedRoute><Home></Home></ProtectedRoute>}></Route>
-          <Route path='/home' element={<ProtectedRoute><Home></Home></ProtectedRoute>}></Route>
-          <Route path='/addPost' element={<AddPost />}></Route>
-          <Route path='/shares' element={<Shares />}></Route>
-          <Route path='/profile/:id' element={<Profile />}></Route>
-          <Route path='/sharePost/:id' element={<SharePost />}></Route>
-          <Route path='/post/:id' element={<PostDescription />}></Route>
-          <Route path='/login' element={<Login></Login>}></Route>
-          <Route path='/register' element={<Registration></Registration>}></Route>
+          <Route exact  path='/' element={<ProtectedRoute><Home></Home></ProtectedRoute>}></Route>
+          <Route exact path='/home' element={<ProtectedRoute><Home></Home></ProtectedRoute>}></Route>
+          <Route exact path='/addPost' element={<AddPost />}></Route>
+          <Route exact path='/shares' element={<Shares />}></Route>
+          <Route exact path='/profile/:id' element={<Profile />}></Route>
+          <Route exact path='/sharePost/:id' element={<SharePost />}></Route>
+          <Route exact path='/post/:id' element={<PostDescription />}></Route>
+          <Route exact path='/login' element={<Login></Login>}></Route>
+          <Route exact path='/register' element={<Registration></Registration>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
